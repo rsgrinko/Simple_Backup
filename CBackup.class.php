@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Класс для создания бекапов
  *
@@ -100,6 +101,15 @@ class CBackup
             $delta = 0.001;
         }
         return $delta . ' cek.';
+    }
+
+    /**
+     * Устанавливаем срок годности бекапов
+     *
+     * @param int $days Количество дней
+     */
+    public function setTTL(int $days) {
+        $this->ttl = $days;
     }
 
     /**
