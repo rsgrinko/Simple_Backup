@@ -9,7 +9,7 @@
 ### $CBackup = new CBackup('/path/for/backup');
 Создаем объект класса, передавая директорию в качестве аргумента
 
-### $CBackup->setOutputFolder($_SERVER['DOCUMENT_ROOT'].'/backup/backups');
+### $CBackup->setOutputFolder('/backup/backups');
 Задаем директорию создания бекапа
 
 ### $CBackup->setIgnoreDirs(['backup', 'no_bkp']);
