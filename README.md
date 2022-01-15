@@ -2,10 +2,10 @@
 Простой класс для создания бекапов 
 
 
-#$CBackup = new CBackup('/path/for/backup');
+### $CBackup = new CBackup('/path/for/backup');
 создаем объект класса, передавая директорию в качестве аргумента
 
-#$CBackup->setOutputFolder($_SERVER['DOCUMENT_ROOT'].'/backup/backups');
+### $CBackup->setOutputFolder($_SERVER['DOCUMENT_ROOT'].'/backup/backups');
 задаем директорию создания бекапа
 
 $CBackup->setIgnoreDirs(['backup', 'no_bkp']); // передаем массив директорий, исключенных из бекапа (сюда можно передать имя папки с архивами бекапов)
