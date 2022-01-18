@@ -250,10 +250,10 @@ class CBackup
 
         $files = glob($this->outputFolder . "/*");
 
-        $deleted = array();
+        $deleted = [];
         foreach ($files as $file) {
             if ((time() - filemtime($file)) > ($this->ttl * 86400)) {
-                array_push($deleted, $file);
+                $deleted[] = $file;
                 unlink($file);
             }
         }
